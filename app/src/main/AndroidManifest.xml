@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vehiclerental">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".CarRentalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.Guest.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.Guest.CreateAccountActivity"
+            android:label="@string/title_activity_create_account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Guest.ChooseBranchActivity"
+            android:label="@string/title_activity_choose_branch"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activities.User.UserBookingsActivity" />
+        <activity android:name=".activities.Guest.SearchAvailableVehicleActivity" />
+        <activity android:name=".activities.Guest.ChangeConnectionSettingsActivity" />
+        <activity android:name=".activities.Guest.BookingSearchResultsActivity" />
+        <activity android:name=".activities.User.BookVehicleActivity" />
+        <activity android:name=".activities.Staff.BranchBookingsActivity" />
+        <activity android:name=".activities.Staff.SystemAdministrationActivity" />
+        <activity android:name=".activities.Staff.ChooseUserForBookingActivity" />
+        <activity android:name=".activities.Staff.CreateUserActivity" />
+        <activity android:name=".activities.Staff.SearchVehicleActivity" />
+        <activity android:name=".activities.Staff.VehicleSearchResultsActivity" />
+        <activity android:name=".activities.Staff.EditVehicleActivity"/>
+        <activity android:name=".activities.Staff.CreateVehicleActivity"/>
+        <activity android:name=".activities.Staff.ShowBranchMovesActivity"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"
+            tools:replace="android:value" />
+    </application>
+
+</manifest>
