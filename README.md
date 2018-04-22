@@ -4,4 +4,4 @@ This project was realised for a course of Mobile and Distributed systems at Oxfo
 
 This repository contains the android application (the client side project) of the system, the distributed system is located in this repository: https://github.com/AlexisChevalier/CarRental-Distributed-System.
 
-If you have any question about the project design, a complete project report is available in the repository. For any other question please contact me directly or open an issue.
+If you have any question about the project design, a complete project report is available in the repository. For any other question please open an issue but keep in mind that I don't maintain the project anymore nor offer setup instructions for the project since the environment required is very specific.
